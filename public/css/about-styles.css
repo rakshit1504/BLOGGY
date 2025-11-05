@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
+
+.about-page-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #fde68a; /* Creamy Ivory background */
+  font-family: "Merriweather", serif;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: calc(100vh - 120px);
+  padding: 60px 0;
+  width: 100%;
+}
+
+.person {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 20px;
+}
+
+.container {
+  border-radius: 50%;
+  height: 312px;
+  -webkit-tap-highlight-color: transparent;
+  transform: scale(0.48);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 400px;
+}
+.container:after {
+  background-color: #fde68a;
+  content: "";
+  height: 10px;
+  position: absolute;
+  top: 390px;
+  width: 100%;
+  border-radius: 50%;
+}
+.container:hover {
+  transform: scale(0.54);
+}
+.container-inner {
+  clip-path: path(
+    "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
+  );
+  position: relative;
+  transform-origin: 50%;
+  top: -200px;
+}
+.circle {
+  background-color: #e4dcd0; /* A soft, complementary gray */
+  border-radius: 50%;
+  cursor: pointer;
+  height: 380px;
+  left: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 210px;
+  width: 380px;
+}
+.img {
+  pointer-events: none;
+  position: relative;
+  transform: translateY(20px) scale(1.15);
+  transform-origin: 50% bottom;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container:hover .img {
+  transform: translateY(0) scale(1.2);
+}
+.img1 {
+  left: 22px;
+  top: 164px;
+  width: 340px;
+  height: auto;
+}
+.img2 {
+  left: -46px;
+  top: 174px;
+  width: 444px;
+  height: auto;
+}
+.img3 {
+  left: -16px;
+  top: 144px;
+  width: 466px;
+  height: auto;
+}
+.divider {
+  background-color: #E8A87C; /* Golden Ochre accent */
+  height: 2px;
+  width: 80px;
+  margin: 1rem 0;
+}
+.name {
+  color: #3D3D3D; /* Dark charcoal text */
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 16px;
+  text-align: center;
+}
+.title {
+  color: #C89F9C; /* Dusty Rose accent */
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  margin-top: 4px;
+}
+
+.about-header {
+    color: #3D3D3D;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+.about-header h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+}

@@ -1,0 +1,53 @@
+<%- include("partials/header") -%>
+
+<!-- Link to the special stylesheet for this page -->
+<link rel="stylesheet" href="/css/about-styles.css">
+
+<!-- 
+  This wrapper div is important. It's the main container for your page 
+  and is targeted by the 'about-styles.css' to apply the black background 
+  and flexbox layout without affecting other pages.
+-->
+<div class="about-page-wrapper">
+
+  <header class="about-header">
+    <h1>About Us</h1>
+  </header>
+
+  <div class="person">
+    <div class="container">
+      <div class="container-inner">
+        <img class="circle" />
+        <!-- 
+          IMPORTANT: For this image to work, you must create a folder 
+          at 'public/images/' and place your 'rakshit.jpg' file inside it.
+          The path must be '/images/rakshit.jpg'
+        -->
+        <img class="img img1" src="/images/rakshit.jpg" alt="Rakshit Bansal"/>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="name">Rakshit Bansal</div>
+    <div class="title">Lead Dev</div>
+  </div>
+
+  <div class="person">
+    <div class="container">
+      <div class="container-inner">
+        <img class="circle" />
+        <!-- 
+          IMPORTANT: For this image to work, you must create a folder 
+          at 'public/images/' and place your 'sarthak.jpg' file inside it.
+          The path must be '/images/sarthak.jpg'
+        -->
+        <img class="img img2" src="/images/kushagra.jpg" alt="Kushagra Chaudhary"/>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="name">Kushagra Chaudhary</div>
+    <div class="title">Co-Developer</div>
+  </div>
+
+</div>
+
+<%- include("partials/footer") -%>

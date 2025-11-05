@@ -1,0 +1,41 @@
+<%- include('partials/header'); -%>
+
+<!-- Link to the specific stylesheet for the contact page -->
+<link rel="stylesheet" href="/css/contact-styles.css">
+
+<body class="home-body-bg">
+
+  <div class="contact-container">
+    <div class="contact-form-wrapper">
+      <h1>Contact Us</h1>
+      <p>Have a question or some feedback for us? Fill out the form below and we'll get back to you as soon as possible.</p>
+
+      <!-- This block will display a success or error message after form submission -->
+      <% if (message) { %>
+        <div class="alert alert-<%= message.type === 'success' ? 'success' : 'danger' %>" role="alert">
+          <%= message.text %>
+        </div>
+      <% } %>
+
+      <!-- The contact form -->
+      <form action="/contact" method="POST">
+        <div class="form-group mb-3">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="abc@gmail.com" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send Feedback</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+<%- include('partials/footer'); -%>
