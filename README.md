@@ -1,4 +1,5 @@
 # BLOGGY  
+
 BLOGGY is a full-featured, dynamic blogging platform designed for writers and readers. It provides a clean, intuitive interface for creating, sharing, and discovering content. Built with a robust Node.js backend, it features secure user authentication, rich text editing with Markdown, and social features like post liking.
 
 ## ✨ Features
